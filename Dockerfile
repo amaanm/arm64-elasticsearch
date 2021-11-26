@@ -2,8 +2,8 @@
 
 FROM arm64v8/alpine:latest
 
-ENV VERSION 6.4.0
-ENV ES_TARBAL https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-6.4.0.tar.gz
+ENV VERSION 6.8.20
+ENV ES_TARBAL https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-6.8.20.tar.gz
 
 RUN mkdir -p /var/lib/elasticsearch
 
