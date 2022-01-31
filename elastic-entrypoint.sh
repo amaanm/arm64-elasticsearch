@@ -36,7 +36,7 @@ fi
 # allow the container to be started with `--user`
 if [ "$1" = 'elasticsearch' -a "$(id -u)" = '0' ]; then
 	# Change the ownership of user-mutable directories to elasticsearch
-	chown -R elasticsearch:elasticsearch /usr/share/elasticsearch/{data,logs}
+	# chown -R elasticsearch:elasticsearch /usr/share/elasticsearch/{data,logs}
 
 	set -- su-exec elasticsearch "$@" "${es_opts[@]}"
 fi
